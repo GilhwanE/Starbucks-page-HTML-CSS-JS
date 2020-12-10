@@ -7,6 +7,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
-ul,li{
+a,ul,li{
     list-style: none;
+    text-decoration: none;
+}
+
+/* Section */
+section{
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    font-size: 20px;
+    padding: 0 30px;
+}
+.logo img{
+    width: 85px;
+    height: 85px;
+}
+
+/* Content */
+.content{
+    font-size: 20px;
+}
+
+.content__title strong{
+    color: #009624;
 }

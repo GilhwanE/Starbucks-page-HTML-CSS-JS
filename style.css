@@ -78,9 +78,23 @@ header ul li a{
     top: 200px;
 }
 
-
+/* Aside */
+.sideicon{
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sideicon li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+}
 /* Footer */
-
 .thumb__image {
     display: flex;
     align-items: center;

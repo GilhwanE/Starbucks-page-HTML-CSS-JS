@@ -1,0 +1,37 @@
+'use strict'
+
+// 1.작은이미지를 클릭하기 위해 작은이미지에 해당하는 클래스를 가져온다.
+// 2.작은이미지가 클릭 상태를 알려야한다.
+// 2-2 작은이미지가 3개임으로 각각의 이미지를 인식해야한다.
+// 3.클릭했을시 대표이미지에 영향을 주어야한다.
+// 4.대표이미지를 인식할수있도록 클래스를 가져온다.
+// 5.대표이미지에 작은이미지가 나타내는 화면을 출력한다.
+
+const thum1 = document.querySelector('#thum1');
+const thum2 = document.querySelector('#thum2');
+const thum3 = document.querySelector('#thum3');
+
+thum1.addEventListener('click', ()=> {
+    changeCirle1();
+});
+thum2.addEventListener('click', () => {
+    changeCirle2();
+});
+thum3.addEventListener('click', () => {
+    changeCirle3();
+});
+
+
+
+const imgbox = document.querySelector('.imgBox'); //  대표 아이콘
+const imgcirle = document.querySelector('.cirle');
+
+function changeCirle1() {
+    imgcirle.style.background="#009624";
+} 
+function changeCirle2() {
+    imgcirle.style.background="#eb7495";
+}
+function changeCirle3() {
+    imgcirle.style.background="#d752b1";    
+}

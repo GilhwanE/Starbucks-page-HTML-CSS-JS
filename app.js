@@ -11,21 +11,25 @@ const thum1 = document.querySelector('#thum1');
 const thum2 = document.querySelector('#thum2');
 const thum3 = document.querySelector('#thum3');
 
-thum1.addEventListener('click', ()=> {
+thum1.addEventListener('mouseover', ()=> {
     changeCirle1();
 });
-thum2.addEventListener('click', () => {
+thum2.addEventListener('mouseover', () => {
     changeCirle2();
 });
-thum3.addEventListener('click', () => {
+thum3.addEventListener('mouseover', () => {
     changeCirle3();
 });
 
 
-
 const imgbox = document.querySelector('.imgBox'); //  대표 아이콘
-const imgcirle = document.querySelector('.cirle');
 
+function changeImage(){
+    imgbox.src = 'images/img2.png';
+}
+
+
+const imgcirle = document.querySelector('.cirle');
 function changeCirle1() {
     imgcirle.style.background="#009624";
 } 

@@ -13,21 +13,36 @@ const thum3 = document.querySelector('#thum3');
 
 thum1.addEventListener('mouseover', ()=> {
     changeCirle1();
+    changeImage1();
 });
 thum2.addEventListener('mouseover', () => {
     changeCirle2();
+    changeImage2();
+
 });
 thum3.addEventListener('mouseover', () => {
     changeCirle3();
+    changeImage3();
 });
 
 
-const imgbox = document.querySelector('.imgBox'); //  대표 아이콘
+// thum2.addEventListener('click', () => {
+//     changeImage2();
+//     console.log('ss');
+    
+// });
 
-function changeImage(){
-    imgbox.src = 'images/img2.png';
+const imgbox = document.querySelector('.starbucks'); //  대표 아이콘
+
+function changeImage1(){
+    imgbox.src ='images/img1.png';
 }
-
+function changeImage2(){
+    imgbox.src ='images/img2.png';
+}
+function changeImage3(){
+    imgbox.src ='images/img3.png';
+}
 
 const imgcirle = document.querySelector('.cirle');
 function changeCirle1() {

@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
     font-family: 'Poppins', sans-serif;
+   
 }
 a,ul,li{
     list-style: none;
@@ -80,9 +83,11 @@ header ul li a:hover{
 }
 
 .imgBox{
-    position: absolute;
-    right: 100px;
-    top: 130px;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 50px;
+    justify-content: flex-end;
 }
 
 
@@ -119,6 +124,7 @@ header ul li a:hover{
 .thumb__image li{
     margin: 0 15px;
     cursor: pointer;
+    z-index: 999;
 }
 .thumb__image li img{
     max-width: 85px;
@@ -140,23 +146,31 @@ header ul li a:hover{
 
 
  @media screen and (max-width: 990px) {
-
+    
     header ul li a{
         display: none;
     }
+    header{
+        padding: 20px;
+    }
+
     .logo img{
-        width: auto;
-        height: auto;
+       max-width: 100px;
+    }
+    .imgBox img{
+       max-width: 250px;
     }
     .imgBox{
-        width: 50%;
-        top: 40%;
-        left: 30%;
+        justify-content: center;
+    }
+    .content{
+        max-width: 100%;
+        margin-top: 15px;
     }
     .thumb__image li img{
-
-    }
+        max-width: 40px;
+    }   
     .cirle{
-        clip-path: circle(410px at center 1000px);
+        clip-path: circle(400px at center bottom);
     }
  }

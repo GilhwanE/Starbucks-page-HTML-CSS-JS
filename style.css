@@ -105,6 +105,7 @@ header ul li a:hover{
 
 .imgBox.starbucks{
     position: relative;
+    top: 36px;
 
 }
 
@@ -186,10 +187,15 @@ header ul li a:hover{
         max-width: 100%;
         margin-top: 15px;
     }
+    .content__title{
+        margin-top: 120px;
+        padding: 20px 12px;
+        font-size: 12px;
+    }
     .thumb__image li img{
         max-width: 40px;
     }   
     .cirle{
-        clip-path: circle(400px at center bottom);
+        clip-path: circle(300px at center bottom);
     }
  }

@@ -105,7 +105,7 @@ header ul li a:hover{
 
 .imgBox.starbucks{
     position: relative;
-    
+
 }
 
 /* Aside */
@@ -137,6 +137,8 @@ header ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 40px;
 }
 .thumb__image li{
     margin: 0 15px;

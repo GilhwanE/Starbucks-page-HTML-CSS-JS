@@ -104,6 +104,8 @@ header ul li a:hover{
 }
 
 .imgBox.starbucks{
+    position: relative;
+    
 }
 
 /* Aside */
